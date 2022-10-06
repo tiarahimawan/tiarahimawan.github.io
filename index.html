@@ -1,66 +1,208 @@
-<h1> Hi, I'm Tiara and this is my Y2T1 class schedule. </h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to Tiara's World!</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
 
-<img src="Tiara profile pic.jpg">
-
-<table border=1>
-  <tr>
-    <td colspan=4 align="center">Tiara Y2T1</td>
-  </tr>
-  
-  <tr>
-    <td>Time</td>
-    <td>Tuesday</td>
-    <td>Wednesday</td>
-    <td>Friday</td>
-  </tr> 
-  
-  <tr>
-    <td>8.15-11.30</td>
-    <td>BGS</td>
-    <td></td>
-    <td></td>
-  </tr>
-  
-  <tr>
-    <td>12.00-15.15</td>
-    <td>Mandarin</td>
-    <td></td>
-    <td>IDP</td> 
-  </tr>
-  
-  <tr>
-    <td>15.30-18.45</td>
-    <td>WAD2</td>
-    <td>BPAS</td>
-    <td></td>
-  </tr>
-  
-</table>
-
-<br>
     
-<form>
-  Name <input type="text" name="Name">
-  <br>
-  Relationship Status
-  <input name="rs" type="radio" value="Single" checked/>Single
-  <input name="rs" type="radio" value="Taken"/>Taken 
-  <input name="rs" type="radio" value="NotSay"/>Prefer not to say
+    <body>
+<!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-  <br>Favourite fruits
-  <input name="fruits[]" type="checkbox" value="apple"/>Apple
-  <input name="fruits[]" type="checkbox" value="orange"/>Orange
-  <input name="fruits[]" type="checkbox" value="Grape"/>Grape
+    <!-- Navbar -->
+<nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tiara's World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#travel">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#music">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#books">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </nav>
+<!-- Navbar End -->
 
-  <input type="button" value="Submit"/>
+  <!-- me section -->
+  <section id="me">
+    <div class="container">
+        <div class="row">
+            <div class="col" style="padding-top: 150px;">
+                <h1>Hi,<br>I am Tiara</h1>
+                <p>and I like to sleep...</p>
+             </div>
+
+             <div class="col">
+                 <img class="profile" src="images/tiara.jpg" alt="pp">
+             </div>
+        </div>
+    </div>
+</section>
+
+<!-- me section ends here -->
+
+<!-- Travel -->
+<section id="travel">
+    <div class="container">
+
+        <div class="row align-items-center">
+            
+        
+
+        <div id="carouselExampleIndicators" class="carousel slide col-9" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/bajo.JPG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kelor Island, Labuan Bajo</h5>
+                    <p>Indonesia</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="images/bali1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tukad Cepung Waterfall, Bali</h5>
+                    <p>Indonesia</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="images/bali2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kamandalu Ubud, Bali</h5>
+                    <p>Indonesia</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="col-3">
+            <h1>Travel</h1>
+            <p>I love traveling and exploring new places. These are some pictures from beautiful places in my home country, Indonesia.</p>
+        </div>
+    </div>
+ </div>
+</section>
+<!-- End of Travel -->
+
+<!-- Music section -->
+<section id="music">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-3">
+                <h1>Music</h1>
+                <p>I like playing the piano and singing in the shower.</p>
+            </div>
+        
+            <div class="col-9 img-fluid ">
+                <img width="80%" src="images/piano.jpeg">
+            </div>
+         
+    </div>
+ </div>
+</section>
+<!-- End of Music Section-->
+
+<!-- Books section -->
+<section id="books">
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col"> 
+          <h1 style="text-align:center">Books</h1>
+          <p>Here are some of my favourite books:</p>
+        </div>     
+
+        <div class="card-group">
+          <div class="card">
+            <img src="images/Atomic Habits.jpg" class="card-img-top" alt="ah">
+            <div class="card-body">
+              <h5 class="card-title">Atomic Habits</h5>
+              <p class="card-text">Atomic Habits is the definitive guide to breaking bad behaviors and adopting good ones in four steps, showing you how small, incremental, everyday routines compound into massive, positive change over time.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Rideofalifetime.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ride of a Lifetime</h5>
+              <p class="card-text">Ride of a Lifetime shares the inspirational story of Robert Iger, including his journey to becoming the CEO of Disney and how his vision, strategy, and leadership guided the company through a time when it's future was uncertain.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/FilosofiTeras.jpeg" class="card-img-top" alt="ft">
+            <div class="card-body">
+              <h5 class="card-title">Filosofi Teras</h5>
+              <p class="card-text">Filosofi Teras introduces readers to stoicism and how to apply it in everyday life</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Books Section -->
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row align-items-center books">
+            <div class="col"> 
+              <h1 style="color:white; text-align: center;">Contact me</h1>
+              <p>Email: tiarahimawan@gmail.com</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- End of contact section -->
+
+  
+    </body>
+</html>
 
 
-</form>
-     
     
-    
-    
-    
+
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
     
     
     
